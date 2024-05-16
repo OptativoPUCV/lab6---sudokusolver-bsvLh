@@ -59,9 +59,7 @@ int is_valid(Node* n){
 
 
 List* get_adj_nodes(Node* n){
-   /*
-    List* list=createList();
-    return list;
+   List* list=createList();
    int columna;
    int fila;
    for (int i = 0 ; i < 9 ; i++)
@@ -97,41 +95,7 @@ List* get_adj_nodes(Node* n){
       }
 
    return list;
-   */
-   List* list = createList();
-   int fil,col;
-
-   //Buscar 1r casilla vac[ia]
-   for (int i = 0; i < 9;i++){
-      fil = i;
-      for (int j = 0; j < 9; j++){
-         col = j;
-         if (n->sudo[i][j] == 0){
-            break;
-         }
-      }
-      if (n->sudo[fil][col] == 0){
-         break;
-      }
-   }
-
-   //Todas las casillas lenas
-   if (fil == 9 && col == 9){
-      return list;
-   }
-
-   //crear adjts.
-   for (int num = 1; num <= 9; num++){
-      Node* aux_node = copy(n); //Creo nuevo nodo
-      aux_node->sudo[fil][col] = num;
-      if(is_valid(aux_node)){
-         pushBack(list, aux_node);
-      } else {
-         free(aux_node);
-      }
-   }
-
-   return list;
+   
 }
 
 
