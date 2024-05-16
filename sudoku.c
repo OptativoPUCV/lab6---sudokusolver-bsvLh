@@ -88,6 +88,8 @@ List* get_adj_nodes(Node* n){
          {
             pushBack(list,aux);
          }
+         else   
+            free(aux);
       }
    if (fila == 9 && columna == 9){
       return list;
