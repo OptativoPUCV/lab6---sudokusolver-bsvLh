@@ -84,7 +84,12 @@ List* get_adj_nodes(Node* n){
       {
          Node *aux = createNode();
          aux = n;
-         
+         aux->sudo[fila][columna] = k;
+         if (is_valid(aux))
+         {
+            pushBack(list,aux);
+         }
+
       }
 }
 
