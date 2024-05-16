@@ -79,6 +79,9 @@ List* get_adj_nodes(Node* n){
          break;
       }
    }
+   if (fila == 9 && columna == 9){
+      return list;
+   }
 
    for (int k = 0 ; k < 9 ; k++)
       {
