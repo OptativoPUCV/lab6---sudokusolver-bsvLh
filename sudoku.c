@@ -94,9 +94,7 @@ List* get_adj_nodes(Node* n){
          else   
             free(aux);
       }
-   if (fila == 9 && columna == 9){
-      return list;
-   }
+
    return list;
 }
 
