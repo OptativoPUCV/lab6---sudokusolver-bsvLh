@@ -74,7 +74,7 @@ List* get_adj_nodes(Node* n){
             break;
          }
       }
-      if (n->sudo[i][columna] == 0)
+      if (n->sudo[fila][columna] == 0)
       {
          break;
       }

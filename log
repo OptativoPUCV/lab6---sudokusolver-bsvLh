@@ -165,3 +165,14 @@ sudoku.c:65:8: error: variable ‘fila’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 7c0ce12
+Thu 16 May 2024 04:20:01 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:85:16: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   85 |          Node *aux = createNode();
+      |                ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+9c39f92
