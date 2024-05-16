@@ -82,8 +82,7 @@ List* get_adj_nodes(Node* n){
 
    for (int k = 0 ; k < 9 ; k++)
       {
-         Node *aux = createNode();
-         aux = n;
+         Node *aux = copy(n);
          aux->sudo[fila][columna] = k;
          if (is_valid(aux))
          {
