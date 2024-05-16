@@ -109,3 +109,21 @@ sudoku.c:82:8: error: unused variable ‘columna_final’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 fadf138
+Thu 16 May 2024 04:19:21 AM UTC: 
+ sudoku.c | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:81:15: error: ‘i’ undeclared (first use in this function)
+   81 |    int fila = i;
+      |               ^
+sudoku.c:81:15: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:84:16: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   84 |          Node *aux = createNode();
+      |                ^~~
+sudoku.c:81:8: error: unused variable ‘fila’ [-Werror=unused-variable]
+   81 |    int fila = i;
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+41dacfb

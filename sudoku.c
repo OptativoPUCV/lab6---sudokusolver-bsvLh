@@ -77,13 +77,14 @@ List* get_adj_nodes(Node* n){
          break;
       }
    }
+
    int fila = i;
-   int columna_inicial = columna;
-   int columna_final = columna;
-   int fila_inicial = fila;
-   int fila_final = fila;
-   int contador = 0;
-   while (columna_inicial > 0)
+   for (int k = 0 ; k < 9 ; k++)
+      {
+         Node *aux = createNode();
+         aux = n;
+         
+      }
 }
 
 
