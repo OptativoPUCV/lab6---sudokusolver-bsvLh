@@ -248,3 +248,14 @@ Thu 16 May 2024 04:28:41 AM UTC:
  tests:  4|3
 total_score: 30/70
 0183877
+Thu 16 May 2024 04:30:46 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:90:13: error: expected ‘(’ before ‘is_valid’
+   90 |          if is_valid(aux)
+      |             ^~~~~~~~
+      |             (
+Compilation failed
+2bec405
