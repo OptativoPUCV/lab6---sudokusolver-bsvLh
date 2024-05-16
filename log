@@ -51,3 +51,16 @@ sudoku.c:73:22: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 ed5d07a
+Thu 16 May 2024 04:14:35 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:67:21: error: expected ‘;’ before ‘if’
+   67 |          columna = j
+      |                     ^
+      |                     ;
+   68 |          if(n->sudo[i][j] == 0)
+      |          ~~          
+Compilation failed
+c7ff242
