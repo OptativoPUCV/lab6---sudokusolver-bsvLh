@@ -275,3 +275,9 @@ test.c:180:8: error: implicit declaration of function ‘is_final’ [-Werror=im
 cc1: all warnings being treated as errors
 Compilation failed
 fab9fda
+Thu 16 May 2024 04:32:50 AM UTC: 
+ sudoku.c | 33 +++++++++++++++++----------------
+ 1 file changed, 17 insertions(+), 16 deletions(-)
+ tests:  6|2
+total_score: 45/70
+0bacdda
