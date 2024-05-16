@@ -127,3 +127,27 @@ sudoku.c:81:8: error: unused variable ‘fila’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 41dacfb
+Thu 16 May 2024 04:19:38 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:83:8: error: redeclaration of ‘fila’ with no linkage
+   83 |    int fila = i;
+      |        ^~~~
+sudoku.c:65:8: note: previous declaration of ‘fila’ with type ‘int’
+   65 |    int fila;
+      |        ^~~~
+sudoku.c:83:15: error: ‘i’ undeclared (first use in this function)
+   83 |    int fila = i;
+      |               ^
+sudoku.c:83:15: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:86:16: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   86 |          Node *aux = createNode();
+      |                ^~~
+sudoku.c:83:8: error: unused variable ‘fila’ [-Werror=unused-variable]
+   83 |    int fila = i;
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0dbc3f1
