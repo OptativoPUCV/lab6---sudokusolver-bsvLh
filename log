@@ -82,3 +82,30 @@ Thu 16 May 2024 04:16:02 AM UTC:
  tests:  3|4
 total_score: 20/70
 d5a1a2d
+Thu 16 May 2024 04:17:48 AM UTC: 
+ sudoku.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:80:15: error: ‘i’ undeclared (first use in this function)
+   80 |    int fila = i;
+      |               ^
+sudoku.c:80:15: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:87:1: error: expected expression before ‘}’ token
+   87 | }
+      | ^
+sudoku.c:85:8: error: unused variable ‘contador’ [-Werror=unused-variable]
+   85 |    int contador = 0;
+      |        ^~~~~~~~
+sudoku.c:84:8: error: unused variable ‘fila_final’ [-Werror=unused-variable]
+   84 |    int fila_final = fila;
+      |        ^~~~~~~~~~
+sudoku.c:83:8: error: unused variable ‘fila_inicial’ [-Werror=unused-variable]
+   83 |    int fila_inicial = fila;
+      |        ^~~~~~~~~~~~
+sudoku.c:82:8: error: unused variable ‘columna_final’ [-Werror=unused-variable]
+   82 |    int columna_final = columna;
+      |        ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fadf138

@@ -62,10 +62,8 @@ List* get_adj_nodes(Node* n){
     List* list=createList();
     return list;
    int columna;
-   int fila;
    for (int i = 0 ; i < 9 ; i++)
    {
-      fila = i;
       for (int j = 0 ; j < 9 ; j++)
       {
          columna = j;
@@ -74,11 +72,18 @@ List* get_adj_nodes(Node* n){
             break;
          }
       }
-      if (n->sudo[fila][columna] == 0)
+      if (n->sudo[i][columna] == 0)
       {
          break;
       }
    }
+   int fila = i;
+   int columna_inicial = columna;
+   int columna_final = columna;
+   int fila_inicial = fila;
+   int fila_final = fila;
+   int contador = 0;
+   while (columna_inicial > 0)
 }
 
 
