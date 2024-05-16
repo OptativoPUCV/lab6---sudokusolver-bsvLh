@@ -33,3 +33,21 @@ sudoku.c:73:22: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 a03ed24
+Thu 16 May 2024 04:14:11 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:68:10: error: expected ‘,’ or ‘;’ before ‘if’
+   68 |          if(n->sudo[i][j] == 0)
+      |          ^~
+sudoku.c:67:14: error: unused variable ‘columna’ [-Werror=unused-variable]
+   67 |          int columna = j
+      |              ^~~~~~~
+sudoku.c:73:22: error: ‘columna’ undeclared (first use in this function)
+   73 |       if (n->sudo[i][columna] == 0){
+      |                      ^~~~~~~
+sudoku.c:73:22: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+ed5d07a

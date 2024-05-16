@@ -70,7 +70,7 @@ List* get_adj_nodes(Node* n){
             break;
          }
       }
-      if (n->sudo[i][j] == 0){
+      if (n->sudo[i][columna] == 0){
          break;
       }
    }
