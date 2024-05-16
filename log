@@ -265,3 +265,13 @@ Thu 16 May 2024 04:30:52 AM UTC:
  tests:  4|3
 total_score: 30/70
 fc472f3
+Thu 16 May 2024 04:32:18 AM UTC: 
+ sudoku.c | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+test.c: In function ‘test_isfinal’:
+test.c:180:8: error: implicit declaration of function ‘is_final’ [-Werror=implicit-function-declaration]
+  180 |     if(is_final(initial)){
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fab9fda
