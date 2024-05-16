@@ -80,7 +80,6 @@ List* get_adj_nodes(Node* n){
       }
    }
 
-   int fila = i;
    for (int k = 0 ; k < 9 ; k++)
       {
          Node *aux = createNode();
