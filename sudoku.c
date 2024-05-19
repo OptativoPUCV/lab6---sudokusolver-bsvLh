@@ -64,6 +64,25 @@ int is_valid(Node* n){
          col[n->sudo[i][j]] = 1;
       }
    }
+
+   for(int k = 0 ; k < 9 ; k+=3)
+   {
+      for(int l = 0 ; l < 9 ; l+=3)
+      {
+         int cuad[10] = {0};
+         for(int i = k ; i < k+3 ; i++)
+         {
+            for(int j = l ; j < l+3 ; j++)
+            {
+               if(n->sudo[i][j] != 0 && cuad[n->sudo[i][j]]
+               {
+                  return 0;
+               }
+               cuad[n->sudo[i][j]] = 1;
+            }
+         }
+      }
+   }
     return 1;
 }
 
