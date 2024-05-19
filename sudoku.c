@@ -124,7 +124,7 @@ Node* DFS(Node* initial, int* cont)
       {
          Node* n = top(stack);
          pop(stack);
-         *cont++;
+         (*cont)++;
          if (is_final(n))
             {
                free(stack);
