@@ -74,7 +74,7 @@ int is_valid(Node* n){
          {
             for(int j = l ; j < l+3 ; j++)
             {
-               if(n->sudo[i][j] != 0 && cuad[n->sudo[i][j]]
+               if(n->sudo[i][j] != 0 && cuad[n->sudo[i][j]])
                {
                   return 0;
                }
