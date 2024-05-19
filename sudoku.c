@@ -124,8 +124,10 @@ Node* DFS(Node* initial, int* cont)
       {
          Node* n = top(stack);
          pop(stack);
+         *cont++;
          if (is_final(n))
             {
+               free(stack);
                return n;
             }
          List* list = get_adj_nodes(n);
